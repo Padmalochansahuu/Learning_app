@@ -4,13 +4,13 @@ A production-grade, high-performance cross-platform mobile application built wit
 
 ---
 
-## 📲 Direct Android APK Download (For Evaluators)
+## 📲 Deliverables & Submission Links (For Evaluators)
 
-[![Download Android APK](https://img.shields.io/badge/Download-Android_Release_APK-22c55e?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)
-
-> **Google Drive Download Link**:  
-> 👉 **[Download LearnHub Release APK (app-release.apk)](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)**  
-> *(Signed, production release APK — ready to install and test directly on any Android device).*
+| Deliverable | Quick Link | Details |
+| :--- | :--- | :--- |
+| 🎬 **Demo Video Walkthrough** | **[Watch Demo Video on Google Drive](https://drive.google.com/file/d/1UlewWNbR8Xt-wftHkFcIogu7Vkgb96cE/view?usp=sharing)** | Complete walkthrough showing Login, Dashboard, Course Details, lesson completion, and offline mode. |
+| 📦 **Android Release APK** | **[Download Android APK (app-release.apk)](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)** | Signed production APK ready to install and test directly on any Android device. |
+| 💻 **Source Code Repository** | **[GitHub Repository](https://github.com/Padmalochansahuu/Learning_app)** | Full Flutter codebase with offline-first MVVM architecture & tests. |
 
 ---
 
