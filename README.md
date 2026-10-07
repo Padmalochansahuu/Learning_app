@@ -4,6 +4,16 @@ A production-grade, high-performance cross-platform mobile application built wit
 
 ---
 
+## 📲 Direct Android APK Download (For Evaluators)
+
+[![Download Android APK](https://img.shields.io/badge/Download-Android_Release_APK-22c55e?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)
+
+> **Google Drive Download Link**:  
+> 👉 **[Download LearnHub Release APK (app-release.apk)](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)**  
+> *(Signed, production release APK — ready to install and test directly on any Android device).*
+
+---
+
 ## 🛠️ Cross-Platform Framework & Tech Stack
 
 | Specification | Details |
@@ -232,8 +242,9 @@ The project includes an end-to-end production signing configuration configured i
 ```bash
 flutter build apk --release --target lib/main.dart --build-name=1.0.0 --build-number=1
 ```
-> **Output location**: `build/app/outputs/flutter-apk/app-release.apk`
-> This APK is signed and can be directly shared and installed on any Android phone.
+> **Output location**: `build/app/outputs/flutter-apk/app-release.apk`  
+> This APK is signed and can be directly shared and installed on any Android phone.  
+> 🔗 **Cloud Download**: [Download Pre-built APK from Google Drive](https://drive.google.com/file/d/1nBT4Oj6RpfTTojLfkg1xrIMbCqwYmUH6/view?usp=sharing)
 
 #### B. Build Signed Release AppBundle (AAB) for Google Play Store (with Obfuscation & Symbols)
 ```bash
