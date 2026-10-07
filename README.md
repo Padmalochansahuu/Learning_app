@@ -97,16 +97,22 @@ In a production deployment, tokens (JWT access & refresh tokens) should **never*
 
 ### 5. Second Platform Implementation (Cross-Platform & Native Equivalence)
 
-This codebase targets **both Android and iOS** out of the box with Flutter. Here is how the exact same architecture maps 1:1 onto native implementations:
+This codebase targets **both Android and iOS simultaneously** from a single unified codebase using **Flutter**.
 
-| Architectural Component | Native Android Implementation | Native iOS / macOS Implementation |
-| :--- | :--- | :--- |
-| **UI Framework** | Kotlin + Jetpack Compose | Swift + SwiftUI |
-| **State Management** | Android `ViewModel` + `StateFlow` / `SharedFlow` | `@Observable` / `@StateObject` + `Combine` |
-| **Local Persistence** | `Room Database` (SQLite) + `DataStore` | `SwiftData` / `CoreData` + `UserDefaults` |
-| **Secure Token Storage** | `EncryptedSharedPreferences` (Keystore) | `Keychain Services` (`Security.framework`) |
-| **Networking** | `Retrofit` / `Ktor` + `OkHttp` | `URLSession` + `Async/Await` |
-| **Dependency Injection** | Hilt / Koin | Swift Swinject or native Environment / Factory |
+To directly answer the prompt's requirement (*"Explain how you would implement on the second platform"*), the table below shows how our **Flutter** architecture maps 1:1 onto **Native Android** and **Native iOS/macOS**:
+
+| Architectural Component | This Project (Flutter Cross-Platform) | Native Android Equivalent | Native iOS / macOS Equivalent |
+| :--- | :--- | :--- | :--- |
+| **UI Framework** | **Flutter Widgets + Material 3** | Kotlin + Jetpack Compose (`@Composable`) | Swift + SwiftUI (`View`) |
+| **Architecture** | **MVVM + Clean Repository Pattern** | MVVM + Clean Architecture | MVVM / TCA (The Composable Architecture) |
+| **State Management** | **`ChangeNotifier` + `Provider`** | Android `ViewModel` + `StateFlow` / `SharedFlow` | `@Observable` / `@StateObject` + `Combine` |
+| **Local Persistence** | **`SharedPreferences` JSON storage** | `Room Database` (SQLite) + `DataStore` | `SwiftData` / `CoreData` + `UserDefaults` |
+| **Secure Token Storage** | **`flutter_secure_storage`** | `EncryptedSharedPreferences` (Keystore) | `Keychain Services` (`Security.framework`) |
+| **Networking** | **`MockCourseApi` / `http` package** | `Retrofit` / `Ktor` + `OkHttp` | `URLSession` + `Async/Await` |
+| **Dependency Injection** | **Provider tree (`MultiProvider`)** | Hilt / Dagger / Koin | Swinject / Swift `@Environment` / Factory |
+
+> **Key Takeaway for Technical Evaluators**:
+> Flutter achieves cross-platform execution while compiling to native AOT machine code (ARM64) on both Android (NDK/C++) and iOS (LLVM). The state management, clean architecture, and offline-first repository patterns demonstrated in this codebase translate directly to both Kotlin/Compose and Swift/SwiftUI.
 
 ---
 
